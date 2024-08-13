@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Farma Guanacaste</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Proceso de Pago</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="checkout">
+        <h2>Revisa tu Pedido</h2>
+        <div id="order-summary">
+            <!-- Resumen del pedido se generará aquí -->
+        </div>
+
+        <h3>Detalles de Pago</h3>
+        <form id="payment-form">
+            <label for="card-name">Nombre en la Tarjeta:</label>
+            <input type="text" id="card-name" required>
+
+            <label for="card-number">Número de Tarjeta:</label>
+            <input type="text" id="card-number" required>
+
+            <label for="card-expiry">Fecha de Expiración:</label>
+            <input type="text" id="card-expiry" placeholder="MM/AA" required>
+
+            <label for="card-cvc">CVC:</label>
+            <input type="text" id="card-cvc" required>
+
+            <button type="submit">Completar Pago</button>
+        </form>
+    </section>
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

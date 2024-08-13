@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Normales - Farma Guanacaste</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Productos Normales</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="anticonceptivos.html">Anticonceptivos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="#" id="cart-icon">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Barra de búsqueda -->
+    <section>
+        <input type="text" id="product-search" placeholder="Buscar productos...">
+    </section>
+
+    <!-- Panel de filtros -->
+    <section>
+        <h2>Filtrar por Categoría</h2>
+        <select class="category-filter">
+            <option value="all">Todos</option>
+            <option value="medicamentos">Medicamentos</option>
+            <option value="suplementos">Suplementos</option>
+            <option value="cuidado personal">Cuidado Personal</option>
+            <option value="anticonceptivos">Anticonceptivos</option>
+        </select>
+    </section>
+
+    <!-- Sección de productos -->
+    <section id="productos-normales">
+        <h2>Nuestros Productos</h2>
+        <div id="product-list-normales">
+            <!-- Los productos normales se generarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <!-- Sección de comentarios y valoraciones -->
+    <section id="comments-section">
+        <h2>Comentarios y Valoraciones</h2>
+        <div id="comments-list">
+            <!-- Los comentarios se mostrarán aquí -->
+        </div>
+
+        <!-- Formulario para agregar un comentario -->
+        <h3>Deja tu comentario</h3>
+        <form id="comment-form">
+            <label for="comment-text">Comentario:</label>
+            <textarea id="comment-text" required></textarea>
+
+            <label for="comment-rating">Calificación:</label>
+            <select id="comment-rating" required>
+                <option value="5">5 - Excelente</option>
+                <option value="4">4 - Muy bueno</option>
+                <option value="3">3 - Bueno</option>
+                <option value="2">2 - Regular</option>
+                <option value="1">1 - Malo</option>
+            </select>
+
+            <button type="submit">Enviar Comentario</button>
+        </form>
+    </section>
+
+    <script src="js/cart.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
